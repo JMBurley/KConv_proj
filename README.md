@@ -15,5 +15,5 @@ The work optimises a kernel that is convolved with the input timeseries to appro
 Our main function operates at $O(n \log n)$, so the method is fast (although exact speed will depend on the local gradients that SciPy curvefit can utilise to fit the data ie. how many calls to the $O(n \log n)$ method does curve_fit need to make?).  Again, the author could write a wrapper to SciPy to improve this --- performing a low-order curvefit solve with which to seed a higher-order solve --- but that's outside the scope of my work for now.
 
 ## Is There Anything Else in this Repo?
-Yes.  There is a Jupyter Notebook showing some iteractive tools on a toy dataset (various versions of the Books example above) where you can call 1) the kernel convolution method and 2) a lagged linear machine learning model with a Ridge Regression.  We see that the kernel convolution is resilient to overfitting, faster, and generally produces better fits.
+Yes.  There is a Jupyter Notebook showing some interactive tools on a toy dataset (various versions of the Books example above) where you can call 1) the kernel convolution method and 2) a lagged linear machine learning model with a Ridge Regression.  We see that the kernel convolution is resilient to overfitting, faster, and generally produces better looking fits.
 
