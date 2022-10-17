@@ -1,0 +1,33 @@
+# data & credentials
+.env
+*.env
+
+# DS_Store
+*.DS_Store
+
+# pycache
+__pycache__
+*/__pycache__/*
+
+# IDE -- ignore local config files
+.idea/*
+*/.idea/*
+
+# eda
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Local virtual environment
+venv/
+.python-version
+
+# Distribution / packaging
+.eggs/
+*.egg-info/
+dist/
+
+# Special inclusions when files are in {locations}
+!test/**
+# DS_Store & tmp still need to be excluded (even if subfolders of `included` items)
+**/*.DS_Store
+**/tmp/*
